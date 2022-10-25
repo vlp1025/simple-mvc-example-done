@@ -153,6 +153,7 @@ const searchNameDog = async (req, res) => {
     return res.json({ error: 'No dog was found' });
   }
 
+  // increasing age
   doc.age++;
 
   try {
