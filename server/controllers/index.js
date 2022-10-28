@@ -53,7 +53,7 @@ const hostPage4 = async (req, res) => {
     return res.render('page4', { dogs: docs });
   } catch (err) {
     console.log(err);
-    return res.json(500).json({ error: 'failed to find dogs' });
+    return res.status(500).json({ error: 'failed to find dogs' });
   }
 };
 
